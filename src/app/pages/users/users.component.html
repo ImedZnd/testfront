@@ -1,0 +1,134 @@
+<mat-grid-list cols="5" rowHeight="150px" style="height:100vh">
+    <mat-grid-tile >
+        <mat-card class="example-card">
+            <mat-card-title style="width: 200px ;">{{allUsers}}</mat-card-title>
+            <mat-card-subtitle>All Users</mat-card-subtitle>
+            <mat-card-actions align="end">
+              <button mat-button>more</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile >
+        <mat-card class="example-card">
+            <mat-card-title style="width: 200px ;">{{allFraudsters}}</mat-card-title>
+            <mat-card-subtitle>Fraudsters</mat-card-subtitle>
+            <mat-card-actions align="end">
+              <button mat-button>more</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-title style="width: 200px ;">{{allVerified}}</mat-card-title>
+            <mat-card-subtitle>Verified</mat-card-subtitle>
+            <mat-card-actions align="end">
+              <button mat-button>more</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-title style="width: 200px ;">{{totalFlags}}</mat-card-title>
+            <mat-card-subtitle>To.Flags</mat-card-subtitle>
+            <mat-card-actions align="end">
+              <button mat-button>more</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+          <mat-card-title style="width: 200px ;">{{latestJoined}}</mat-card-title>
+          <mat-card-subtitle>joined in 2018</mat-card-subtitle>
+          <mat-card-actions align="end">
+            <button mat-button>more</button>
+          </mat-card-actions>
+        </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+        <mat-card >
+            <mat-card-content >
+              <div class="d-flex justify-content-between">
+                <h2 class="example-h2" style="width: 250px ;">Result</h2>
+                <h3 class="example-h2" style="width: 70px ;">Result</h3>
+              </div>
+                <section class="example-section">
+                  <mat-progress-bar
+                      class="example-margin"
+                      [color]="color"
+                      [value]="value"
+                      [bufferValue]="bufferValue">
+                  </mat-progress-bar>
+                </section>
+              <br>
+              <div class="d-flex justify-content-between">
+                <h2 class="example-h2" style="width: 250px ;">Result</h2>
+                <h3 class="example-h2" style="width: 70px ;">Result</h3>
+              </div>
+              <section class="example-section">
+                <mat-progress-bar
+                    class="example-margin"
+                    [color]="color"
+                    [value]="value"
+                    [bufferValue]="bufferValue">
+                </mat-progress-bar>
+              </section>
+            </mat-card-content>
+          </mat-card>
+    </div>
+    <div class="col-6">
+        <mat-card >
+            <mat-card-content >
+              <div class="d-flex justify-content-between">
+                <h2 class="example-h2" style="width: 250px ;">Result</h2>
+                <h3 class="example-h2" style="width: 70px ;">Result</h3>
+              </div>
+              <section class="example-section">
+                <mat-progress-bar
+                    class="example-margin"
+                    [color]="color"
+                    [value]="value"
+                    [bufferValue]="bufferValue">
+                </mat-progress-bar>
+              </section>
+            <br>
+            <div class="d-flex justify-content-between">
+              <h2 class="example-h2" style="width: 250px ;">Result</h2>
+              <h3 class="example-h2" style="width: 70px ;">Result</h3>
+            </div>
+          <section class="example-section">
+              <mat-progress-bar
+                  class="example-margin"
+                  [color]="color"
+                  [value]="value"
+                  [bufferValue]="bufferValue">
+              </mat-progress-bar>
+            </section>
+            </mat-card-content>
+          </mat-card>
+    </div>
+    </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div id="optionHalfPie"></div>
+    </div>
+    <div class="col">
+      <div id="containerX"></div>
+    </div>
+  </div>
+</div>
+<app-map></app-map>
+
+<mat-card class="Table-card">
+  <mat-card-title style="width: 200px ;">Table of users</mat-card-title>
+  <mat-card-subtitle>Table of users</mat-card-subtitle>
+  <mat-card-content>
+    <app-tabel></app-tabel>
+  </mat-card-content>
+</mat-card>
